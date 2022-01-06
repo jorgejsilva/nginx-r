@@ -12,6 +12,7 @@ spec:
         kind: GitRepository
         name: nginx-r
   interval: 1m0s
+  releaseName: helm-nginx-r
   targetNamespace: default
   values:
     image:
@@ -25,3 +26,4 @@ spec:
         - path: /
           pathTYpe: ImplementationSpecific
     nameOverride: ""
+

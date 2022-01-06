@@ -24,6 +24,5 @@ spec:
       - host: nginx-r.150.165.254.151.nip.io
         paths:
         - path: /
-          pathTYpe: ImplementationSpecific
-    nameOverride: ""
-
+          pathType: ImplementationSpecific
+    nameOverride: "helm-nginx-r"

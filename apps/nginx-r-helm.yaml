@@ -1,4 +1,3 @@
----
 apiVersion: helm.toolkit.fluxcd.io/v2beta1
 kind: HelmRelease
 metadata:
@@ -18,12 +17,12 @@ spec:
     replicaCount: 2
     image:
       repository: jorgejsilva/nginx-r
-      tag: "1.0.0" # {"$imagepolicy": "flux-system:nginx-r-pol:tag"}
+      tag: "1.0.5" # {"$imagepolicy": "flux-system:nginx-r-pol:tag"}
     ingress:
       enabled: true
       className: "nginx"
       hosts:
-      - host: nginx-r.150.165.254.151.nip.io
-        paths:
-        - path: /
-          pathType: ImplementationSpecific
+        - host: nginx-r.150.165.254.151.nip.io
+          paths:
+            - path: /
+              pathType: ImplementationSpecific
